@@ -1,6 +1,5 @@
 @import "./utils/variables";
 @import "./base/general";
-@import "./utils/placeholders";
 @import "./base/normalize";
 @import "./utils/visually-hidden";
 @import "./components/page-header";
@@ -21,3 +20,5 @@
 @import "./components/portfolio-filter";
 @import "./components/portfolio";
 @import "./components/current-page";
+@import "./components/modal-window";
+@import "./components/contact-us-form";
