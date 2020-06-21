@@ -1,10 +1,10 @@
-%img {
+.img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-%container {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -12,12 +12,12 @@
   padding-right: 15px;
 }
 
-%list {
+.list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-%link {
+.link {
   text-decoration: none;
 }
