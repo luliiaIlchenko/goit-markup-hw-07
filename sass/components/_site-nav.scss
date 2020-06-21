@@ -1,13 +1,26 @@
 .site-nav {
   display: flex;
   margin-left: 85px;
+
+  &item {
+    position: relative;
+  }
+
+  &.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.site-nav .item {
-  position: relative;
-}
-
-.site-nav .item + .item {
+.site-nav .item .site-nav .item + .item {
   margin-left: 50px;
 }
 
