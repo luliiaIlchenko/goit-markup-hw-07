@@ -1,0 +1,33 @@
+.label {
+  display: block;
+  margin-bottom: 21px;
+
+  color: $button-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-us {
+  margin-right: 94px;
+  width: calc(100% / 4);
+}
+
+.sign-button {
+  display: flex;
+  padding: 10px 28px;
+  align-items: center;
+
+  .button:hover & {
+    fill: $accent-color;
+  }
+}
+
+.sign-icon {
+  display: inline-block;
+  margin-left: 10px;
+  fill: $primary-white-color;
+  transition: $fill-transition;
+}
