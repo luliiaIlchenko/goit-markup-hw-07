@@ -386,7 +386,7 @@ summary {
 }
 
 .address .logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
 }
 
