@@ -1,3 +1,7 @@
+.logo {
+  text-decoration: none;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -23,28 +27,10 @@ body {
   padding-right: 15px;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -374,7 +360,7 @@ summary {
   color: #212121;
 }
 
-.address .logo.link {
+.address .logo {
   display: block;
   margin-bottom: 10px;
 }

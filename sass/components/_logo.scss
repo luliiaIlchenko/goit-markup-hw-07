@@ -1,20 +1,22 @@
 .logo {
+  @extend %link;
   color: $accent-color;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
 
-.logo.accent {
-  color: $primary-title-color;
-}
+  &.accent {
+    color: $primary-title-color;
+  }
 
-.address .logo.link {
-  display: block;
-  margin-bottom: 10px;
-}
-.logo.inverse {
-  color: $primary-white-color;
+  .address & {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &.inverse {
+    color: $primary-white-color;
+  }
 }
