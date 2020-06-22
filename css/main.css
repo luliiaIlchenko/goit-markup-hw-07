@@ -1,4 +1,4 @@
-.site-nav, .advantages-list, .services-list, .team-list, .socials-list, .clients-list, .contacts-list, .footer-contacts, .footer-socials {
+.site-nav, .advantages-list, .services-list, .team-list, .socials-list, .clients-list, .contacts-list, .footer-contacts, .footer-socials, .filter, .portfolio {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -629,7 +629,6 @@ summary {
 }
 
 .clients-link:hover, .clients-link:focus {
-  color: #2196f3;
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
