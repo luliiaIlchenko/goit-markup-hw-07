@@ -1,5 +1,6 @@
 .contacts-list {
   @extend %list;
+
   display: flex;
   margin-left: auto;
 
@@ -10,8 +11,10 @@
 
 .contact-link {
   @extend %link;
+
   display: flex;
   align-items: center;
+
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
