@@ -28,17 +28,13 @@
 
   & .socials-link {
     @extend %link;
-    background-color: $primary-white-color;
-    fill: $team-socials-color;
-    border-radius: 50%;
+    @extend %socials;
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: $team-socials-color;
 
     &:hover,
     &:focus {
       fill: $primary-white-color;
-      background-color: $accent-color;
     }
   }
 }

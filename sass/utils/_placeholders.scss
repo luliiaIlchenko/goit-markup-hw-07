@@ -7,3 +7,17 @@
 %link {
   text-decoration: none;
 }
+
+%socials {
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
