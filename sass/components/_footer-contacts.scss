@@ -1,16 +1,20 @@
 .footer-contacts {
-  @extend %link;
+  @extend %list;
 
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  transition: $color-transition;
+  .contacts-link {
+    @extend %link;
 
-  &.link:hover,
-  &.link:focus {
-    color: $accent-color;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    transition: $color-transition;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 

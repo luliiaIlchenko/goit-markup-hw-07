@@ -1,4 +1,6 @@
-.clients {
+.clients-list {
+  @extend %list;
+
   display: flex;
 
   & .item {
@@ -10,7 +12,7 @@
   }
 }
 
-.clients.link {
+.clients-link {
   justify-content: center;
   align-items: center;
   width: 170px;

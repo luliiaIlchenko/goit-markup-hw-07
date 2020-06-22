@@ -1,10 +1,10 @@
-.site-nav, .contacts-list {
+.site-nav, .advantages-list, .services-list, .team-list, .socials-list, .clients-list, .contacts-list, .footer-contacts, .footer-socials {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.site-nav .page, .logo, .contact-link, .footer-contacts {
+.site-nav .page, .logo, .socials-link, .contact-link, .footer-contacts .contacts-link {
   text-decoration: none;
 }
 
@@ -456,17 +456,17 @@ summary {
   text-align: center;
 }
 
-.advantages {
+.advantages-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.advantages .item {
+.advantages-list .item {
   width: calc((100% - 30px * 3) / 4);
 }
 
-.advantages .item:not(:last-child) {
+.advantages-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -493,18 +493,18 @@ summary {
   border-radius: 4px;
 }
 
-.services {
+.services-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.services .item {
+.services-list .item {
   position: relative;
   width: calc((100% - 60px) / 3);
 }
 
-.services .item:not(:last-child) {
+.services-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -527,10 +527,10 @@ summary {
 }
 
 .section.background {
-  background-color: var(--section-bg-color);
+  background-color: #f5f4fa;
 }
 
-.team {
+.team-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,14 +556,21 @@ summary {
   text-align: center;
 }
 
-.worker-info .socials.link {
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.socials-link {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.worker-info .socials.link:hover,
-.worker-info .socials.link:focus {
+.socials-link:hover, .socials-link:focus {
   fill: #ffffff;
 }
 
@@ -586,30 +593,21 @@ summary {
   letter-spacing: 0.03em;
 }
 
-/* Team socials*/
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.clients {
+.clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.clients .item {
+.clients-list .item {
   width: calc((100% - 30px * 5) / 6);
 }
 
-.clients .item:not(:last-child) {
+.clients-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients.link {
+.clients-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -625,7 +623,7 @@ summary {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients.link:hover, .clients.link:focus {
+.clients-link:hover, .clients-link:focus {
   color: #2196f3;
   fill: #2196f3;
   border: 1px solid #2196f3;
@@ -712,7 +710,7 @@ summary {
           align-items: baseline;
 }
 
-.footer-contacts {
+.footer-contacts .contacts-link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -722,7 +720,7 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contacts.link:hover, .footer-contacts.link:focus {
+.footer-contacts .contacts-link:hover, .footer-contacts .contacts-link:focus {
   color: #2196f3;
 }
 
@@ -749,12 +747,12 @@ summary {
   margin-right: 10px;
 }
 
-.footer-socials .link {
+.footer-socials .socials-link {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
 
-.socials.link {
+.footer-socials .socials-link {
   padding: 12px;
   width: 44px;
   height: 44px;
@@ -763,7 +761,7 @@ summary {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials.link:hover, .socials.link:focus {
+.footer-socials .socials-link:hover, .footer-socials .socials-link:focus {
   background-color: #2196f3;
 }
 

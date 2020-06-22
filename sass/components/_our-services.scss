@@ -1,4 +1,6 @@
-.services {
+.services-list {
+  @extend %list;
+
   display: flex;
 
   & .item {
