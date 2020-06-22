@@ -9,6 +9,12 @@
 }
 
 .socials-list .socials-link, .footer-socials .socials-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 12px;
   width: 44px;
   height: 44px;
