@@ -4,7 +4,7 @@
   list-style: none;
 }
 
-.site-nav .page, .logo, .socials-link, .contact-link, .footer-contacts .contacts-link {
+.site-nav .page, .logo, .socials-list .socials-link, .contact-link, .footer-contacts .contacts-link {
   text-decoration: none;
 }
 
@@ -548,14 +548,6 @@ summary {
   margin-right: 30px;
 }
 
-.worker-info {
-  padding-top: 30px;
-  padding-bottom: 24px;
-  padding-right: 32px;
-  padding-left: 32px;
-  text-align: center;
-}
-
 .socials-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,14 +556,27 @@ summary {
       justify-content: space-around;
 }
 
-.socials-link {
+.socials-list .socials-link {
+  background-color: #ffffff;
   fill: #afb1b8;
+  border-radius: 50%;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials-link:hover, .socials-link:focus {
+.socials-list .socials-link:hover, .socials-list .socials-link:focus {
   fill: #ffffff;
+  background-color: #2196f3;
+}
+
+.worker-info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-right: 32px;
+  padding-left: 32px;
+  text-align: center;
 }
 
 .worker-name {
